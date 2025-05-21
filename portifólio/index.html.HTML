@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Currículo de Ayla</title>
+  <style>
+    /* Estilo geral do corpo da página */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('FUNDOC.jpg'); /* imagem de fundo */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+      text-align: center; /* centraliza conteúdo fora do container */
+    }
+
+    /* Container principal que segura o conteúdo do currículo */
+    .container {
+      background-color: rgba(255, 255, 255, 0.85); /* fundo branco translúcido */
+      max-width: 800px;
+      margin: 3rem auto; /* centraliza na página com espaço em cima e baixo */
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      text-align: left; /* alinha os textos internos à esquerda para facilitar leitura */
+    }
+
+    /* Centraliza a imagem, título principal e nome animado (marquee) */
+    .container img,
+    .container > h1,
+    .container marquee {
+      text-align: center;
+      display: block; /* transforma em bloco para poder centralizar */
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Estilo dos títulos (h3) com leve recuo e cor personalizada */
+    .container h3 {
+      margin-left: 10px; /* pequeno recuo para não encostar na borda */
+      color: #5a4b8d;
+    }
+
+    /* Remove os marcadores das listas e organiza o recuo */
+    ul {
+      list-style-type: none; /* tira as bolinhas */
+      padding-left: 0;
+      margin-left: 20px; /* recua as listas para alinhar com os títulos */
+    }
+
+    /* Espaço entre os itens da lista para melhor leitura */
+    li {
+      margin: 0.5rem 0;
+    }
+
+    /* Estilo dos links */
+    a {
+      color: #3d4e9b;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Centraliza o player de áudio com espaçamento em cima */
+    audio {
+      display: block;
+      margin: 2rem auto 0;
+    }
+
+    /* Estilo do texto animado */
+    marquee {
+      font-weight: bold;
+      color: #6a5acd;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Título principal -->
+    <h1>Curriculum Vitae</h1>
+
+    <!-- Foto da Ayla, com borda arredondada e sombra -->
+    <img src="MFOTO.JPG" alt="Foto de Ayla" style="border-radius: 100px; width: 150px; box-shadow: 0 0 10px rgba(0,0,0,0.3);" />
+
+    <!-- Nome animado em movimento -->
+    <marquee><h2>Ayla Santos Silva</h2></marquee>
+
+    <hr />
+
+    <!-- Dados pessoais com título e lista alinhados à esquerda -->
+    <h3><i>Dados Pessoais:</i></h3>
+    <ul>
+      <li>Endereço: Rua Ayrton Sena, Nº 118</li>
+      <li>Celular: (75) 98898-5396</li>
+      <li>Email: saylassantos1994@gmail.com</li>
+    </ul>
+
+    <!-- Escolaridade -->
+    <h3><i>Escolaridade:</i></h3>
+    <ul>
+      <li>Ensino Médio – <a href="https://www.instagram.com/cetep.lnab/" target="_blank">CETEP</a> – Completo</li>
+      <li>Técnico de Enfermagem – <a href="https://www.instagram.com/cetep.lnab/" target="_blank">CETEP</a> – Completo</li>
+      <li>Engenharia de Produção – <a href="https://fsssacramento.br/" target="_blank">F.S.S.S</a> – Em curso</li>
+    </ul>
+
+    <!-- Experiências profissionais -->
+    <h3><i>Experiências Profissionais:</i></h3>
+    <ul>
+      <li>Operadora de Caixa – Delicatessen Dom Val's – 6 meses</li>
+    </ul>
+
+    <!-- Player de áudio -->
+    <audio controls loop>
+      <source src="CONTROL.mp3" type="audio/mp3" />
+      Seu navegador não suporta a tag de áudio.
+    </audio>
+  </div>
+</body>
+</html>
